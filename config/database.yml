@@ -1,0 +1,15 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: gcgames
+  username: ns
+  password: 14156
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: gcgames
+  username: ns
+  password: 14156
