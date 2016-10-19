@@ -8551,7 +8551,7 @@ footer.widget {
 }
 .latest-posts-widget > li {
   line-height: 1.714em;
-  background: url(../images/dots.png) repeat-x top;
+  background: url(images/dots.png) repeat-x top;
   padding: 13px 0 9px;
 }
 .latest-posts-widget > li:first-child {
@@ -8570,7 +8570,7 @@ footer.widget {
 }
 .categories-widget ul li {
   line-height: 40px;
-  background: url(../images/dots-2.png) repeat-x bottom;
+  background: url(images/dots-2.png) repeat-x bottom;
 }
 .categories-widget ul li:last-child {
   background: none;
@@ -8876,7 +8876,7 @@ section section {
   box-sizing: border-box;
 }
 #MainNav ul .dropdown .dropdown-menu > li + li {
-  background: url("../images/dots-2.png") repeat-x top;
+  background: url("images/dots-2.png") repeat-x top;
 }
 #MainNav ul .dropdown .dropdown-menu:hover {
   display: block;
@@ -9520,7 +9520,7 @@ footer form textarea {
   height: 1px;
   left: 0;
   right: 0;
-  background: url("../images/dots-2.png") repeat-x;
+  background: url("images/dots-2.png") repeat-x;
 }
 #BlogBody #Content nav.pager .prev,
 #BlogBody #Content nav.pager .next {
@@ -9529,7 +9529,7 @@ footer form textarea {
   top: 30px;
   height: 30px;
   width: 30px;
-  background: #2d91ff url('../images/sprite.png') no-repeat 0px 0px;
+  background: #2d91ff url('images/sprite.png') no-repeat 0px 0px;
   text-indent: -10000px;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
