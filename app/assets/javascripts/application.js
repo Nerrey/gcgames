@@ -10,15 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= jquery.min
-//= jquery.ba-bbq
-//= jquery.easing.1.3
-//= jquery.easy-pie-chart
-//= jquery.flexlider-min
-//= jquery.isotope
-//= jquery.parallax-1.1.3
-//= jquery.tweet
-//= jquery.viewport.min
-//= lightbox-2.8.2min
-//= main
-//= boottstrap.
+//= require jquery.min
+//= require bootstrap.min
+//= require jquery.tweet
+//= require jquery.flexslider-min
+//= require lightbox-2.8.2min
+//= require jquery.parallax-1.1.3
+//= require jquery.easing.1.3
+//= require jquery.easy-pie-chart
+//= require jquery.viewport.min
+//= require jquery.isotope.min
+//= require jquery.ba-bbq.min
+//= require contact-form
+//= require main 

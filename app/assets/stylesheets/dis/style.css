@@ -8134,7 +8134,7 @@ ul.list-dot li:before {
   border: none;
 }
 .table-special table tr {
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
   border: none;
 }
 .table-special table tr:after {
@@ -8220,13 +8220,13 @@ ul.list-dot li:before {
   margin: 0;
   padding: 15px 10px 16px;
   text-align: center;
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
 }
 .price-box > span {
   display: block;
   padding: 15px 10px 16px;
   text-align: center;
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
 }
 .price-box > span.price {
   font-weight: bold;
@@ -8293,10 +8293,10 @@ ul.list-dot li:before {
 }
 /* ====== ACCORDION ====== */
 .accordion {
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
 }
 .accordion .accordion-group {
-  background: url("../images/dots.png") repeat-x top;
+  background: url("/images/dots.png") repeat-x top;
   margin: 0;
   padding: 0;
   border: none;
@@ -8540,7 +8540,7 @@ footer.widget {
   margin: 0;
 }
 .latest-posts > li {
-  background: url(../images/dots-2.png) repeat-x top;
+  background: url(/images/dots-2.png) repeat-x top;
 }
 .latest-posts > li:first-child {
   background: none;
@@ -8551,7 +8551,7 @@ footer.widget {
 }
 .latest-posts-widget > li {
   line-height: 1.714em;
-  background: url(images/dots.png) repeat-x top;
+  background: url(/images/dots.png) repeat-x top;
   padding: 13px 0 9px;
 }
 .latest-posts-widget > li:first-child {
@@ -8570,7 +8570,7 @@ footer.widget {
 }
 .categories-widget ul li {
   line-height: 40px;
-  background: url(images/dots-2.png) repeat-x bottom;
+  background: url(/images/dots-2.png) repeat-x bottom;
 }
 .categories-widget ul li:last-child {
   background: none;
@@ -8774,7 +8774,7 @@ section section {
   width: 30px;
   height: 30px;
   display: none;
-  background: #2d91ff url("../images/sprite.png") -120px 0 no-repeat;
+  background: #2d91ff url("/images/sprite.png") -120px 0 no-repeat;
   border: none;
   border-radius: 0;
   margin-left: 0;
@@ -8876,7 +8876,7 @@ section section {
   box-sizing: border-box;
 }
 #MainNav ul .dropdown .dropdown-menu > li + li {
-  background: url("images/dots-2.png") repeat-x top;
+  background: url("/images/dots-2.png") repeat-x top;
 }
 #MainNav ul .dropdown .dropdown-menu:hover {
   display: block;
@@ -8939,7 +8939,7 @@ section section {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/arrow.png") no-repeat center;
+  background: url("/images/arrow.png") no-repeat center;
 }
 #MainNav .arrow:hover {
   background: #262626;
@@ -9017,7 +9017,7 @@ section section {
   width: 30px;
   text-indent: -10000px;
   background-color: #2d91ff;
-  background-image: url('../images/sprite.png');
+  background-image: url('/images/sprite.png');
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
   -o-transition: background .3s ease;
@@ -9105,7 +9105,7 @@ section section {
   content: " ";
   display: block;
   height: 1px;
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
 }
 .person-box h4:last-child:after {
   margin-top: 9px;
@@ -9121,7 +9121,7 @@ section section {
   content: " ";
   display: block;
   height: 1px;
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
   margin-bottom: 7px;
 }
 .person-box h4 {
@@ -9520,7 +9520,7 @@ footer form textarea {
   height: 1px;
   left: 0;
   right: 0;
-  background: url("images/dots-2.png") repeat-x;
+  background: url("/images/dots-2.png") repeat-x;
 }
 #BlogBody #Content nav.pager .prev,
 #BlogBody #Content nav.pager .next {
@@ -9529,7 +9529,7 @@ footer form textarea {
   top: 30px;
   height: 30px;
   width: 30px;
-  background: #2d91ff url('images/sprite.png') no-repeat 0px 0px;
+  background: #2d91ff url('/images/sprite.png') no-repeat 0px 0px;
   text-indent: -10000px;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
@@ -9598,7 +9598,7 @@ footer form textarea {
 }
 #BlogBody #Content #comments .comment,
 #BlogBody #Content .comments .comment {
-  background: url("../images/dots.png") repeat-x bottom;
+  background: url("/images/dots.png") repeat-x bottom;
   position: relative;
   padding: 15px 0 17px 80px;
 }
@@ -9764,7 +9764,7 @@ p:first-child {
   right: -50px;
 }
 .lb-data .lb-close {
-  background: #2d91ff url("../images/sprite.png") -90px 0;
+  background: #2d91ff url("/images/sprite.png") -90px 0;
   opacity: 1;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
@@ -9778,7 +9778,7 @@ p:first-child {
   top: 100px;
 }
 .lb-loader a {
-  background-image: url("../images/loading.gif");
+  background-image: url("/images/loading.gif");
 }
 /* =========================
  * ===== flexslider ======== */
@@ -9826,7 +9826,7 @@ p:first-child {
 }
 .flexslider .flex-direction-nav .flex-prev,
 .flexslider .flex-direction-nav .flex-next {
-  background: #2d91ff url('../images/sprite.png') no-repeat 0px 0px;
+  background: #2d91ff url('/images/sprite.png') no-repeat 0px 0px;
   height: 30px;
   width: 30px;
   opacity: 1;
