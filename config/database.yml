@@ -1,10 +1,10 @@
 production:
   adapter: postgresql
   encoding: unicode
-  host: postgresql6.locum.ru
-  database: nerrey_simply74
-  username: nerrey_simply74
-  password: Tp6HCgZSz
+  host: postgresql7.locum.ru
+  database: nerrey_Nerrey49
+  username: nerrey_Nerrey49
+  password: Aaa14156
 
 development:
   adapter: postgresql
