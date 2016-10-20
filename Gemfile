@@ -17,6 +17,7 @@ gem "russian"
 
 gem 'capistrano'
 gem 'capistrano-rvm'
+gem 'capistrano-bundler'
 gem 'unicorn'
 
 gem 'cancancan'
