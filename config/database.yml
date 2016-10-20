@@ -1,10 +1,10 @@
 production:
   adapter: postgresql
   encoding: unicode
-  host: localhost
-  database: gcgames
-  username: ns
-  password: 14156
+  host: postgresql6.locum.ru
+  database: nerrey_simply74
+  username: nerrey_simply74
+  password: Tp6HCgZSz
 
 development:
   adapter: postgresql
