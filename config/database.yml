@@ -13,3 +13,11 @@ development:
   database: gcgames
   username: ns
   password: 14156
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: postgresql7.locum.ru
+  database: nerrey_Nerrey49
+  username: nerrey_Nerrey49
+  password: Aaa14156
