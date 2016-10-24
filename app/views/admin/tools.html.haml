@@ -1,2 +1,15 @@
-%h1 Admin#tools
-%p Find me in app/views/admin/tools.html.haml
+%br
+%br
+%br
+%br
+%br
+%section.container#BlogBody 
+  .row-fluid  
+    .button-box 
+      = form_for create_path, :html => { :class => 'navbar-form pull-left' } do |f|
+        
+        = f.text_field :email 
+        = f.text_field :password
+        = f.button :submit, :class => 'btn'
+    / = link_to t('.cancel', :default => t("helpers.links.cancel")), bots_path, :class => 'btn btn-default'
+  
