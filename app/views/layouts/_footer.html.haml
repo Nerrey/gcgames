@@ -1,0 +1,57 @@
+%footer
+  .container
+    .row-fluid
+      .span3
+        .text-widget.widget
+          %h4 About nonus
+          %p
+            Lorem ipsum dolor nonus amet, consectetur ex adipisicing elit, sed do eiusmod incididunt ut labore et
+            dolore magna aliqua. Ut enim ad ex minim veniam, quis nostrud lorem exercitation ullamco laboris
+            nisi ut aliquip nesciunt aliqua.
+      .span3
+        .latest-posts-widget.widget
+          %h4 Latest posts
+          %ul.latest-posts.latest-posts-widget
+            %li
+              %span.title
+                %a{:href => "03-blog-single.html"} Standard Post Format with Image
+              %span.date Aug 1, 2013
+            %li
+              %span.title
+                %a{:href => "03-blog-single.html"} Gallery Post Format
+              %span.date Jul 29, 2013
+            %li
+              %span.title
+                %a{:href => "03-blog-single.html"} Link Post Format
+              %span.date Jul 22, 2013
+      .span3
+        .photo-stream-widget.widget
+          %h4 Photo stream
+          .flickr_badge
+            .flickr_badge_image
+              %a{:href => "#"}
+                %img{:alt => "", :src => "images/content/works/thumbnails/work-thumbnail-1.jpg"}/
+            .flickr_badge_image
+              %a{:href => "#"}
+                %img{:alt => "", :src => "images/content/works/thumbnails/work-thumbnail-2.jpg"}/
+            .flickr_badge_image
+              %a{:href => "work3.html"}
+                %img{:alt => "", :src => "images/content/works/thumbnails/work-thumbnail-3.jpg"}/
+            .flickr_badge_image
+              %a{:href => "work4.html"}
+                %img{:alt => "", :src => "images/content/works/thumbnails/work-thumbnail-4.jpg"}/
+            .flickr_badge_image
+              %a{:href => "work5.html"}
+                %img{:alt => "", :src => "images/content/works/thumbnails/work-thumbnail-5.jpg"}/
+            .flickr_badge_image
+              %a{:href => "work6.html"}
+                %img{:alt => "", :src => "images/content/works/thumbnails/work-thumbnail-6.jpg"}/
+      .span3
+        .newsletter-widget.widget
+          %h4 Our newsletter
+          %form{:action => "", :method => "", :novalidate => ""}
+            %input{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+            %input{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+            %input.btn-block{:type => "submit", :value => "Submit"}/
+
+  %h4 GCGAMES

@@ -53,6 +53,10 @@ GEM
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
     capistrano-harrow (0.5.3)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     code_analyzer (0.4.7)
       sexp_processor
     concurrent-ruby (1.0.2)
@@ -97,6 +101,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     net-scp (1.2.1)
@@ -106,6 +111,12 @@ GEM
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
+    paperclip (5.0.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
     pg (0.19.0)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -226,6 +237,7 @@ DEPENDENCIES
   devise
   haml-rails
   listen
+  paperclip (~> 5.0.0)
   pg
   rails
   rails_best_practices
