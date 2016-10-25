@@ -1,15 +1,60 @@
-%br
-%br
-%br
-%br
-%br
-%section.container#BlogBody 
-  .row-fluid  
-    .button-box 
-      = form_for create_path, :html => { :class => 'navbar-form pull-left' } do |f|
-        
-        = f.text_field :email 
-        = f.text_field :password
-        = f.button :submit, :class => 'btn'
-    / = link_to t('.cancel', :default => t("helpers.links.cancel")), bots_path, :class => 'btn btn-default'
-  
+%section.container 
+  .row-fluid
+    .table-special
+      %table
+        %thead
+          %tr
+            %td
+              Header 1
+            %td
+              Header 2
+            %td
+              Header 3
+            %td
+              Header 4
+        %tbody
+          %tr
+            %td
+              Hasad Sears
+            %td
+              Argentina
+            %td
+              Nov 12, 2013
+            %td
+              1 57 631 4456-9099
+          %tr
+            %td
+              Carson Hines
+            %td
+              South Africa
+            %td
+              Feb 9, 2013
+            %td
+              1 44 892 5062-4187
+          %tr
+            %td
+              Xenos Wilder
+            %td
+              British Indian Ocean Territory
+            %td
+              Mar 27, 2012
+            %td
+              1 82 800 3550-0093
+          %tr
+            %td
+              Seth Phillips
+            %td
+              Uganda
+            %td
+              Jan 25, 2013
+            %td
+              1 52 159 2264-0307
+          %tr
+            %td
+              Garth Farrell
+            %td
+              Greenland
+            %td
+              May 21, 2012
+            %td
+              1 70 357 8348-3065

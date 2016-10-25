@@ -3,8 +3,6 @@ class AdminController < ApplicationController
   
   def tools
   
-    @bot = User.new
-
   end
 
   def create

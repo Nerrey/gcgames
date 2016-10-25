@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161023141929) do
+ActiveRecord::Schema.define(version: 20161025124757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "images", force: :cascade do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.integer  "work_id"
+    t.index ["work_id"], name: "index_images_on_work_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -33,12 +42,8 @@ ActiveRecord::Schema.define(version: 20161023141929) do
   end
 
   create_table "works", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.string   "description"
+    t.string "name"
+    t.string "description"
   end
 
 end

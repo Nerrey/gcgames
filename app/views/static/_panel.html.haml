@@ -44,5 +44,5 @@
             -if current_user 
               = link_to "#{current_user.email}", destroy_user_session_path
             -else
-              = link_to "вход", new_user_session_path
+              = link_to "вход", admin_tools_path
               
