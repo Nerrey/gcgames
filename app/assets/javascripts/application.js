@@ -10,7 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery.min
+//= require jquery
+//= require jquery_ujs
 //= require bootstrap.min
 //= require jquery.tweet
 //= require jquery.flexslider-min

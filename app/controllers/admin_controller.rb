@@ -3,6 +3,8 @@ class AdminController < ApplicationController
   
   def tools
   
+    @work = Work.all
+
   end
 
   def create

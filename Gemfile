@@ -7,8 +7,8 @@ gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'therubyracer', platforms: :ruby
-# gem 'jquery-rails'
-# gem 'jquery-ui-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem "paperclip", "~> 5.0.0"
 gem "haml-rails"
 
