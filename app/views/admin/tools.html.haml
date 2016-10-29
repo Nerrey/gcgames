@@ -21,20 +21,29 @@
               %td
                 = work[:name]
               %td
-                = work[:description][0..19] + "..."
+                = work[:description][0..19]
+                %p
+                = work[:description][20..37] + "..."
               %td
                 Nov 12, 2013
               %td
-                = link_to "delete", form_path, remote: true, class: "btn btn-default btn-mini"
+                = link_to "delete", "#", remote: true, class: "btn btn-danger btn-mini"
+                = link_to "edit", "#", remote: true, class: "btn btn-warning btn-mini"
+      %br
+      = link_to "New", new_work_path, remote: true, class: "btn btn-success pull-right"
 .modal.hide.fade#modal
   .modal-header
     %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
     %h3 Modal header
   .modal-body
-    %p One fine body…
+    .row-fluid  
+      .button-box.section-emphasis-2#form
   .modal-footer
     %a.btn{:href => "#"} Close
     %a.btn.btn-primary{:href => "#"} Save changes
-/ %a.btn{ :href => form_path, :role => "button", remote: true} Create
-/ = link_to "create",form_path, remote: true
-= link_to "create", form_path, remote: true, class: "btn"
+    %br
+
+:css
+  #textcolor{
+    color: #08c;
+  }

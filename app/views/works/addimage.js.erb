@@ -1,0 +1,6 @@
+var size = $('input').length;
+if (size < 10){
+  $("#photo").append("<h4 id = 'textcolor'>Добавьте картинку</h4><input type = 'file' name = 'image[image]' id = 'image_image'>");
+}else{
+  $("#photo").append("<h4 id = 'textcolor'>Максимальное количество картинок</h4>");
+}
