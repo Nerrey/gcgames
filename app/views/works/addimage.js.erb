@@ -1,6 +1,6 @@
-var size = $('input').length;
-if (size < 10){
-  $("#photo").append("<h4 id = 'textcolor'>Добавьте картинку</h4><input type = 'file' name = 'image[image]' id = 'image_image'>");
+var size = $('.file_field').length;
+if (size < 6){
+  $("#photo").append("<h4 id = 'textcolor'>Добавьте картинку</h4><input type='file' name='work[images_attributes][" + size.toString() + "][image]' id='work_images_attributes_" + size.toString() + "_image' class = 'file_field'>");
 }else{
-  $("#photo").append("<h4 id = 'textcolor'>Максимальное количество картинок</h4>");
+  $("#end").html("<h4 id = 'textcolor'>Максимальное количество картинок</h4>");
 }

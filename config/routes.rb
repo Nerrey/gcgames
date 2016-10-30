@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   match '/work_create', :to => "works#create", :as => :work_create, via: [:get, :post]
   match '/form/new', :to => "works#new", :as => :new_work, via: [:get, :post]
   match '/addimage', :to => "works#addimage", :as => :addimage, via: [:get, :post]
+  match '/warning', :to => "works#warning", :as => :warning, via: [:get, :post]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # match '/admin/tools', :to => "admin_tools#admin", :as => :admin_tools, via: [:get, :post]
 end
