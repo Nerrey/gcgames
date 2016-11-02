@@ -23,12 +23,12 @@
               %td
                 = work[:description][0..19]
                 %p
-                = work[:description][20..37] + "..."
+                = work.description.length > 40 ? work[:description][20..37] + "..." : work[:description]
               %td
                 Nov 12, 2013
               %td
-                = link_to "delete", warning_path, remote: true, class: "btn btn-danger btn-mini"
-                = link_to "edit", "#", remote: true, class: "btn btn-warning btn-mini"
+                = link_to "delete", work_path(id: work.id),method: :delete, data: {confirm: "Вы уверены, что хотите удалить игру?"}, class: "btn btn-danger btn-mini"
+                = link_to "edit", edit_work_path(work), remote: true, class: "btn btn-warning btn-mini"
       %br
       = link_to "New", new_work_path, remote: true, class: "btn btn-success pull-right"
 .modal.hide.fade#modal
@@ -42,17 +42,16 @@
     %a.btn{:href => "#"} Close
     %a.btn.btn-primary{:href => "#"} Save changes
     %br
-.modal.hide.fade#warning
+.modal.hide.fade#edit
   .modal-header
     %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
     %h3 Предупреждение
   .modal-body
     .row-fluid  
-      .button-box.section-emphasis-2
+      .button-box.section-emphasis-2#edit_form
         %h3#textcolor Вы уверены, что хотите удалить игру?
   .modal-footer
-    = link_to "Да", "#", remote: true, class: "btn btn-success pull-left"
-    = link_to "Нет", admin_tools_path, class: "btn btn-danger pull-right"
+    footer
 :css
   #textcolor{
     color: #08c;

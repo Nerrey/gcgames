@@ -1,11 +1,17 @@
-= form_for(@game, url: "/work_create", :html => { :class => 'navbar-form', :multipart => true }) do |f|
+= form_for(@game, :html => { :class => 'navbar-form', :multipart => true }) do |f|
   %h4#textcolor Название
   = f.text_field :name
   %h4#textcolor Описание
   = f.text_field :description
-  = f.fields_for :images do |t|
-    #photo
-    #end
+  -if @game.name.nil? 
+  -else  
+    %ul.thumbnails  
+      - @game.images.each do |p|
+        %li.span3#imagetag
+          = image_tag p.image.url(:thumb)
+  #photo
+  #end
   = f.button :submit, :class => 'btn'
   = link_to "Добавить картинку", addimage_path, remote: true, class: "btn btn-success pull-right"
-
+  
+/ %ul.thumbnails

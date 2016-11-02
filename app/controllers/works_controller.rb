@@ -1,10 +1,9 @@
 class WorksController < ApplicationController
-
+  before_action :set_work, only: [:delete, :edit, :update, :destroy]
   layout "ladmin"
 
   def new
     @game = Work.new
-    @game.images.build
   end
 
   def create
@@ -14,14 +13,19 @@ class WorksController < ApplicationController
 
   def addimage
 
-    
   end
 
-  def warning
-
+  def edit
+    @game = @work
   end
 
-  def delete
+  def update
+    @work.update(work_params)
+    redirect_to "/admin/tools"
+  end
+
+  def destroy
+    @work.destroy
     redirect_to "/admin/tools"
   end
   
@@ -31,5 +35,8 @@ class WorksController < ApplicationController
     params.require(:work).permit(:name, :description, images_attributes: [:image])
   end
 
+  def set_work
+    @work = Work.find(params[:id])
+  end
 
 end
