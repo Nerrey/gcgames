@@ -7,8 +7,9 @@ gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'therubyracer', platforms: :ruby
-# gem 'jquery-rails'
-# gem 'jquery-ui-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem "paperclip", "~> 5.0.0"
 gem "haml-rails"
 
 gem 'devise'
@@ -21,6 +22,7 @@ gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'unicorn'
 
+gem 'devise'
 gem 'cancancan'
 gem 'redis'
 gem 'redis-store', :require => 'redis-store'

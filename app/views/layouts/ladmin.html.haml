@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %link{:href => "favicon.ico", :rel => "shortcut icon"}
+    %title Nonus - One Page Parallax HTML5/CSS3 Template
+    / <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+    = javascript_include_tag "application"
+    = csrf_meta_tag
+    = stylesheet_link_tag "application", :media => "all"
+%nav#MainNav.navbar.sticky
+  %a.arrow{:href => "#MainNav"}
+  .navbar-inner
+    .container
+      %button.btn.btn-navbar.collapsed{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        / This button toggles visibility of menu on mobile devices
+      %a.brand{:href => "#MainHeader"}
+        %img{:alt => "companyname", :src => "/images/logo-small.png"}
+      -if current_user
+        .nav-collapse.collapse
+          %ul.nav.nav-pills
+            %li.dropdown
+              %a.dropdown-toggle{:href => root_path} Home
+              %ul.dropdown-menu{:role => "menu"}
+                %li.dropdown
+                  %a.dropdown-toggle{:href => "#"} Submenu
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li.dropdown
+                      %a.dropdown-toggle{:href => "#"} Another menu
+                      %ul.dropdown-menu{:role => "menu"}
+                        %li
+                          %a{:href => "#"} Page 1
+                        %li
+                          %a{:href => "#"} Page 2
+                        %li
+                          %a{:href => "#"} Page 3
+                    %li
+                      %a{:href => "#"} Page 1
+                    %li
+                      %a{:href => "#"} Page 2
+            %li.dropdown
+              %a.dropdown-toggle{:href => "#Work"} Work
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{:href => "07-portfolio.html"} Isotope
+            %li
+              %a{:href => "#Info"} Info
+            %li
+              %a{:href => "05-elements.html"} Elements
+            %li
+              %a{:href => "04-404.html"} 404
+            %li
+              %a{:href => "#BlogList"} Blog
+            %li
+              = link_to "выход #{current_user.email}", destroy_user_session_path
+      -else
+-if current_user
+  = yield
+-else
+  =render "form"

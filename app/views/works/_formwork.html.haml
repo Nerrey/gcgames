@@ -1,0 +1,48 @@
+.modal-body
+  .row-fluid  
+    .button-box.section-emphasis-2  
+      = form_for(@game, :html => { :class => 'navbar-form', :multipart => true }) do |f|
+        %h4#textcolor Название
+        = f.text_field :name
+        %h4#textcolor Описание
+        = f.text_field :description
+        
+        #photo
+        #end
+        = f.button :submit, :class => 'btn'
+        = link_to "Добавить картинку", addimage_path, remote: true, class: "btn btn-success pull-right"
+.modal-footer
+  %ul.thumbnails  
+    -if @game.name.nil? 
+    -else  
+      - @game.images.each do |p|
+        %li{id: "image_" + p.id.to_s}   
+          = form_for(p, url: "/del_image", method: "get", remote: true) do |s|   
+            = s.hidden_field :id, value: p.id
+            .image_container  
+              = s.submit "", class: "image_submit"
+              = image_tag p.image.url(:icon)   
+/ %ul.thumbnails
+:css
+  .image_submit{
+    background:url("../images/close.png") !important;
+    background-repeat: no-repeat !important;
+    width: 27px !important;
+    height: 27px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: 25px;
+    left: 24px;
+  } 
+  .image_container{
+    width: 70px !important;
+    height: 70px !important;
+    padding: 0 !important;
+    display: inline !important;
+  }
+  .edit_image{
+    width: 70px !important;
+    height: 70px !important;
+    padding: 0 !important;
+  }

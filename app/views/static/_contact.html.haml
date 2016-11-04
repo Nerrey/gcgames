@@ -1,0 +1,43 @@
+.row-fluid
+  %form.contactForm.span6{:action => "form/contact.php", :method => "post", :novalidate => ""}
+    %input{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+    %input{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+    %textarea{:name => "message", :placeholder => "Your message", :required => ""}
+    %label.info All fields required
+    %input{:type => "submit", :value => "Submit"}/
+  .span3
+    .text-widget.widget
+      %h4 Say Hello
+      %p
+        Drop us a line via email:
+        %br/
+        %a{:href => "mailto:fake@mail.com"} hello@nonus.com
+    .text-widget.widget
+      %h4.adress Visit us
+      %p
+        221 Baker Street
+        %br/
+        London, United Kingdom
+        %br/
+        +44 20 1234 5678
+        %br/
+  .span3
+    .social-widget.widget
+      %h4 Elsewhere
+      %p.social
+        %a{:href => "#", :rel => "nofollow"}
+          %i.icon-facebook-sign>
+          Facebook
+        %br/
+        %a{:href => "#", :rel => "nofollow"}
+          %i.icon-twitter>
+          Twitter
+        %br/
+        %a{:href => "#", :rel => "nofollow"}
+          %i.icon-google-plus-sign>
+          Google+
+        %br/
+        %a{:href => "#", :rel => "nofollow"}
+          %i.icon-dribbble>
+          Dribbble
+      %p

@@ -1,0 +1,15 @@
+%br
+%br
+%br
+%br
+%br
+%section.container
+  .row-fluid  
+    .button-box.section-emphasis-2  
+      = form_for(:user, :url => session_path(:user), :html => { :class => 'navbar-form pull-left' }) do |f|
+        
+        = f.text_field :email, placeholder: "email"
+        = f.password_field :password, placeholder: "Password", autocomplete: "off"
+        = f.button :submit, :class => 'btn'
+    / = link_to t('.cancel', :default => t("helpers.links.cancel")), bots_path, :class => 'btn btn-default'
+  

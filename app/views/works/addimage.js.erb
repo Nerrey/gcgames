@@ -1,0 +1,7 @@
+var size = $('.file_field').length;
+var imgsize = $('form.edit_image').length;
+if (size < (6 - imgsize) && imgsize < 6){
+  $("#photo").append("<h4 id = 'textcolor'>Добавьте картинку</h4><input type='file' name='work[images_attributes][" + size.toString() + "][image]' id='work_images_attributes_" + size.toString() + "_image' class = 'file_field'>");
+}else{
+  $("#end").html("<h4 id = 'textcolor'>Максимальное количество картинок</h4>");
+}
