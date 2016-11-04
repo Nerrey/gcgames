@@ -35,23 +35,12 @@
   .modal-header
     %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
     %h3 Заполните Форму
-  .modal-body
-    .row-fluid  
-      .button-box.section-emphasis-2#form
-  .modal-footer
-    %a.btn{:href => "#"} Close
-    %a.btn.btn-primary{:href => "#"} Save changes
-    %br
+  .modalnew
 .modal.hide.fade#edit
   .modal-header
     %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
     %h3 Предупреждение
-  .modal-body
-    .row-fluid  
-      .button-box.section-emphasis-2#edit_form
-        %h3#textcolor Вы уверены, что хотите удалить игру?
-  .modal-footer
-    footer
+  .modaledit 
 :css
   #textcolor{
     color: #08c;

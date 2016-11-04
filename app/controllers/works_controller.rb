@@ -12,7 +12,7 @@ class WorksController < ApplicationController
   end
 
   def addimage
-
+    puts params.inspect
   end
 
   def edit
@@ -27,6 +27,11 @@ class WorksController < ApplicationController
   def destroy
     @work.destroy
     redirect_to "/admin/tools"
+  end
+  
+  def del_image
+    @id = params[:image][:id]
+    Image.find(@id).delete
   end
   
   private
