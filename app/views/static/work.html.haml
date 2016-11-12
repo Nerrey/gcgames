@@ -1,31 +1,34 @@
-#Work1.flexslider.span9.work1
+/ .span{ id: "Work#{@imagework.id} work#{@imagework.id} flexslider span9"}
+.flexslider.span9{class: "work#{@imagework.id}", id: "Work#{@imagework.id}" }
   %ul.slides
-    %li
-      %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-1.jpg"}
-        %img{:alt => "preview", :src => "images/content/works/middle/work-middle-1.jpg"}
-    %li
-      %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-6.jpg"}
-        %img{:alt => "preview", :src => "images/content/works/middle/work-middle-6.jpg"}
-    %li
-      %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-9.jpg"}
-        %img{:alt => "preview", :src => "images/content/works/middle/work-middle-9.jpg"}
-    %li
-      %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-10.jpg"}
-        %img{:alt => "preview", :src => "images/content/works/middle/work-middle-10.jpg"}
+    - @imagework.images.each do |iw| 
+      %li
+        %img{:alt => "preview", :src => iw.image.url(:midle)}  
+      / %li
+      /   %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-1.jpg"}
+      /     %img{:alt => "preview", :src => "images/content/works/middle/work-middle-1.jpg"}
+      / %li
+      /   %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-6.jpg"}
+      /     %img{:alt => "preview", :src => "images/content/works/middle/work-middle-6.jpg"}
+      / %li
+      /   %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-9.jpg"}
+      /     %img{:alt => "preview", :src => "images/content/works/middle/work-middle-9.jpg"}
+      / %li
+      /   %a{"data-lightbox" => "work-1", :href => "images/content/works/large/work-large-10.jpg"}
+      /     %img{:alt => "preview", :src => "images/content/works/middle/work-middle-10.jpg"}
 .span3
   %nav
     %a.prev{:href => "#"} Previous
     %a.all{:href => "#"} All
     %a.next{:href => "#"} Next
   %h4
-    This is work #{@text}
+    = @imagework[:name]
   %p
-    Aliquam a quam mi, ut ligula. Nulla vel tristique. Donec in massa diam, quis suscipit est.
-    Pellentesque odio urna, bibendum ut fringilla eget, fermentum sodales nisi.
-  %h4 Client
-  %p
-    ThemeForest.net
+    = @imagework[:description]
+  / %h4 Client
+  / %p
+  /   ThemeForest.net
 :javascript
-  $(".work#{@text}").flexslider({
+  $(".work#{@imagework.id}").flexslider({
       slideshow: false
   });

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   
   devise_for :users, controllers: {sessions: 'users/sessions'}
 
-  # match '/work/:page', :to => "static#work", :as => :work_page, via: [:get, :post]
+  match '/work/:page', :to => "static#work", :as => :work_page, via: [:get, :post]
   match '/create', :to => "admin#create", :as => :create, via: [:get, :post]
   # match '/work_create', :to => "works#create", :as => :work, via: [:get, :post]
   # match '/form/new', :to => "works#new", :as => :new_work, via: [:get, :post]

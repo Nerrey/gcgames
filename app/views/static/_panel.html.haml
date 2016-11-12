@@ -5,44 +5,45 @@
       %button.btn.btn-navbar.collapsed{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
         / This button toggles visibility of menu on mobile devices
       %a.brand{:href => "#MainHeader"}
-        %img{:alt => "companyname", :src => "/images/logo-small.png"}/
-      .nav-collapse.collapse
-        %ul.nav.nav-pills
-          %li.dropdown
-            %a.dropdown-toggle{:href => "#MainHeader"} Home
-            %ul.dropdown-menu{:role => "menu"}
-              %li.dropdown
-                %a.dropdown-toggle{:href => "#"} Submenu
-                %ul.dropdown-menu{:role => "menu"}
-                  %li.dropdown
-                    %a.dropdown-toggle{:href => "#"} Another menu
-                    %ul.dropdown-menu{:role => "menu"}
-                      %li
-                        %a{:href => "#"} Page 1
-                      %li
-                        %a{:href => "#"} Page 2
-                      %li
-                        %a{:href => "#"} Page 3
-                  %li
-                    %a{:href => "#"} Page 1
-                  %li
-                    %a{:href => "#"} Page 2
-          %li.dropdown
-            %a.dropdown-toggle{:href => "#Work"} Work
-            %ul.dropdown-menu{:role => "menu"}
-              %li
-                %a{:href => "07-portfolio.html"} Isotope
-          %li
-            %a{:href => "#Info"} Info
-          %li
-            %a{:href => "05-elements.html"} Elements
-          %li
-            %a{:href => "04-404.html"} 404
-          %li
-            %a{:href => "#BlogList"} Blog
-          %li
-            -if current_user 
-              = link_to "#{current_user.email}", destroy_user_session_path
-            -else
-              = link_to "вход", admin_tools_path
-              
+      / .nav-collapse.collapse
+      /   %ul.nav.nav-pills
+      /     %li.dropdown
+      /       %a.dropdown-toggle{:href => "#MainHeader"} Home
+      /       %ul.dropdown-menu{:role => "menu"}
+      /         %li.dropdown
+      /           %a.dropdown-toggle{:href => "#"} Submenu
+      /           %ul.dropdown-menu{:role => "menu"}
+      /             %li.dropdown
+      /               %a.dropdown-toggle{:href => "#"} Another menu
+      /               %ul.dropdown-menu{:role => "menu"}
+      /                 %li
+      /                   %a{:href => "#"} Page 1
+      /                 %li
+      /                   %a{:href => "#"} Page 2
+      /                 %li
+      /                   %a{:href => "#"} Page 3
+      /             %li
+      /               %a{:href => "#"} Page 1
+      /             %li
+      /               %a{:href => "#"} Page 2
+      /     %li.dropdown
+      /       %a.dropdown-toggle{:href => "#Work"} Work
+      /       %ul.dropdown-menu{:role => "menu"}
+      /         %li
+      /           %a{:href => "07-portfolio.html"} Isotope
+      /     %li
+      /       %a{:href => "#Info"} Info
+      /     %li
+      /       %a{:href => "05-elements.html"} Elements
+      /     %li
+      /       %a{:href => "04-404.html"} 404
+      /     %li
+      /       %a{:href => "#BlogList"} Blog
+      /     -if current_user 
+      /       %li
+      /         = link_to "#{current_user.email}", destroy_user_session_path
+      /       %li
+      /         = link_to "admin", admin_tools_path
+      /     -else
+      /       = link_to "вход", admin_tools_path
+      /         
